@@ -7,7 +7,6 @@ public class FactoryDemo {
 		
 		FiguraGeometrica quadrado = figuraFactory.criarQuadrado(2);
 		quadrado.calcularArea();
-		System.out.println("Data passando parâmetros " + quadrado);
 		
 		FiguraGeometrica circulo = figuraFactory.criarCirculo(3);
 		circulo.calcularArea();
@@ -17,7 +16,7 @@ public class FactoryDemo {
 		
 		FiguraGeometrica losango = figuraFactory.criarLosango(2, 4);
 		losango.calcularArea();
-		
+
 		FiguraGeometrica paralelograma = figuraFactory.criarParalelograma(2, 4);
 		paralelograma.calcularArea();
 		
