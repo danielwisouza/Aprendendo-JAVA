@@ -1,5 +1,5 @@
 package br.gov.fatec.calculando;
 
-public class Calculable {
-	
+public interface Calculable {
+	double calcularArea();
 }

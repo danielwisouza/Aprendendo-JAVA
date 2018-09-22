@@ -1,8 +1,5 @@
 
 package br.gov.fatec.calculando;
-import static java.lang.Math;
-
-import java.math.MathContext;
 
 public class Hexagono {
 	private Double lados;
@@ -10,6 +7,7 @@ public class Hexagono {
 	
 	int x = 2;
 	Math.
+	
 	
 
 	
