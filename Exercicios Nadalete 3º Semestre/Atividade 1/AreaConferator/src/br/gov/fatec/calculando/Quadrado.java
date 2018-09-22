@@ -1,12 +1,14 @@
 package br.gov.fatec.calculando;
 
-public class Quadrado extends FiguraGeometrica implements Calculable{
-	public Quadrado(double lado) {
-		this.lado = lado;
-	}
+public class Quadrado extends FiguraGeometrica implements Calculable {
 
+	public Quadrado(final double lado) {
+		this.setLado(lado);
+	}
+	
 	@Override
 	public double calcularArea() {
-		return area = (lado * lado);
+		return getLado() * 2;
 	}
+
 }

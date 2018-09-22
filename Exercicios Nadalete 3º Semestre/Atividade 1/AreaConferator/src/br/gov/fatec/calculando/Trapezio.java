@@ -1,14 +1,15 @@
 package br.gov.fatec.calculando;
 
-public class Trapezio extends FiguraGeometrica implements Calculable{
-	public Trapezio(double baseMaior, double baseMenor, double altura) {
-		this.baseMaior = baseMaior;
-		this.baseMenor = baseMenor;
-		this.altura = altura;
-	}
+public class Trapezio extends FiguraGeometrica implements Calculable {
 
+	public Trapezio(final double baseMaior,final double baseMenor,final double altura) {
+		this.setBaseMaior(baseMaior);
+		this.setBaseMenorr(baseMenor);
+		this.setAltura(altura);
+	}
+	
 	@Override
 	public double calcularArea() {
-		return area = (((baseMaior-baseMenor)*altura)/2);
+		return (((getBaseMenor()-getBaseMenor())*getAltura())/2);
 	}
 }

@@ -1,13 +1,15 @@
 package br.gov.fatec.calculando;
 
-public class Triangulo extends FiguraGeometrica implements Calculable{
-	public Triangulo(double base, double altura) {
-		this.base = base;
-		this.altura = altura;
-	}
+public class Triangulo extends FiguraGeometrica implements Calculable {
 
+	public Triangulo(final double base,final double altura) {
+		this.setBase(base);
+		this.setAltura(altura);
+		
+	}
+	
 	@Override
 	public double calcularArea() {
-		return area = ((base * altura)/2);
+		return ((getBase()*getAltura())/2);
 	}
 }

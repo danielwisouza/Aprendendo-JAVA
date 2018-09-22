@@ -1,13 +1,15 @@
 package br.gov.fatec.calculando;
 
-public class Paralelograma extends FiguraGeometrica implements Calculable{
-	public Paralelograma(double base, double altura) {
-		this.base = base;
-		this.altura = altura;
-	}
+public class Paralelograma extends FiguraGeometrica implements Calculable {
 
+	public Paralelograma(final double base,final double altura) {
+		this.setBase(base);
+		this.setAltura(altura);
+		
+	}
+	
 	@Override
 	public double calcularArea() {
-		return area = (base * altura);
+		return (getBase()*getAltura());
 	}
 }

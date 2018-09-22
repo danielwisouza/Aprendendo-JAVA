@@ -1,14 +1,13 @@
 package br.gov.fatec.calculando;
 
-public class Circulo extends FiguraGeometrica implements Calculable{
-	public Circulo(double raio) {
-		this.raio = raio;
-	}
+public class Circulo extends FiguraGeometrica implements Calculable {
 
+	public Circulo(final double raio) {
+		this.setRaio(raio);
+	}
+	
 	@Override
 	public double calcularArea() {
-		return area = 3.14 * Math.pow(raio, 2);
-		//Deve estar dentro da função para executar o MAth
+		return (3.14 * Math.pow(getRaio(), 2)); 
 	}
-
 }
