@@ -10,6 +10,11 @@ public class Trapezio extends FiguraGeometrica implements Calculable {
 	
 	@Override
 	public double calcularArea() {
-		return (((getBaseMenor()-getBaseMenor())*getAltura())/2);
+		return (((getBaseMaior()-getBaseMenor())*getAltura())/2);
+	}
+	
+	@Override
+	public String toString() {
+		return "Area do Trapezio: " + calcularArea();
 	}
 }

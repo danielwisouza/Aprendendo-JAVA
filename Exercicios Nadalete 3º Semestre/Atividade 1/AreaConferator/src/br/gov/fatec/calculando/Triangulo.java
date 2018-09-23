@@ -12,4 +12,9 @@ public class Triangulo extends FiguraGeometrica implements Calculable {
 	public double calcularArea() {
 		return ((getBase()*getAltura())/2);
 	}
+	
+	@Override
+	public String toString() {
+		return "Area do Triangulo: " + calcularArea();
+	}
 }

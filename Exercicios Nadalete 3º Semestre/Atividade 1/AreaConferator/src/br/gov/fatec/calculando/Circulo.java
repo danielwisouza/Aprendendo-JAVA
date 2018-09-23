@@ -10,4 +10,9 @@ public class Circulo extends FiguraGeometrica implements Calculable {
 	public double calcularArea() {
 		return (3.14 * Math.pow(getRaio(), 2)); 
 	}
+	
+	@Override
+	public String toString() {
+		return "Area do Circulo: " + calcularArea();
+	}
 }

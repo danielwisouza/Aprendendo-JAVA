@@ -11,4 +11,11 @@ public class Quadrado extends FiguraGeometrica implements Calculable {
 		return getLado() * 2;
 	}
 
+	@Override
+	public String toString() {
+		return "Area do Quadrado: " + calcularArea();
+	}
+	
+	
+
 }

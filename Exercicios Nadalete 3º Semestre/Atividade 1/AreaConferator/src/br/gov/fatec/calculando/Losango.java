@@ -12,4 +12,9 @@ public class Losango extends FiguraGeometrica implements Calculable {
 	public double calcularArea() {
 		return (getBase()*getAltura());
 	}
+	
+	@Override
+	public String toString() {
+		return "Area do Losango: " + calcularArea();
+	}
 }

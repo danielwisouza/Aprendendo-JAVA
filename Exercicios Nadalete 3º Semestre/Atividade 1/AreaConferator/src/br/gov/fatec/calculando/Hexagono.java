@@ -10,4 +10,9 @@ public class Hexagono extends FiguraGeometrica implements Calculable {
 	public double calcularArea() {
 		return ((3*(Math.sqrt(3))/2)/2)*(getLado()*getLado());
 	}
+	
+	@Override
+	public String toString() {
+		return "Area do Hexagono: " + calcularArea();
+	}
 }

@@ -12,4 +12,9 @@ public class Retangulo extends FiguraGeometrica implements Calculable {
 	public double calcularArea() {
 		return (getBase()*getAltura());
 	}
+	
+	@Override
+	public String toString() {
+		return "Area do Retangulo: " + calcularArea();
+	}
 }
