@@ -9,7 +9,7 @@ public class FactoryDemo {
 		//quadrado.calcularArea();
 		System.out.println(quadrado.toString());
 		
-		FiguraGeometrica circulo = figuraFactory.criarCirculo(3);
+		FiguraGeometrica circulo = figuraFactory.criarCirculo(3.88);
 		//circulo.calcularArea();
 		System.out.println(circulo.toString());
 		
