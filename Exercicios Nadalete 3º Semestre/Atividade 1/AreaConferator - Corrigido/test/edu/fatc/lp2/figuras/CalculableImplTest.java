@@ -9,15 +9,20 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 import edu.fatec.lp2.figuras.Calculable;
+import edu.fatec.lp2.figuras.Cilindro;
 import edu.fatec.lp2.figuras.Circulo;
 import edu.fatec.lp2.figuras.Cubo;
+import edu.fatec.lp2.figuras.Esfera;
 import edu.fatec.lp2.figuras.Hexagono;
 import edu.fatec.lp2.figuras.Losango;
 import edu.fatec.lp2.figuras.Paralelograma;
+import edu.fatec.lp2.figuras.Pirâmide;
 import edu.fatec.lp2.figuras.Quadrado;
 import edu.fatec.lp2.figuras.Retangulo;
 import edu.fatec.lp2.figuras.Trapezio;
 import edu.fatec.lp2.figuras.Triangulo;
+import edu.fatec.lp2.figuras.*;
+
 
 @RunWith(Parameterized.class)
 public class CalculableImplTest {
@@ -47,6 +52,10 @@ public class CalculableImplTest {
 	        			 { new Retangulo(4.0, 2.0), 8.0},
 	        			 { new Trapezio(4.0, 2.0, 3.0), 9.0},
 	        			 { new Triangulo(4.0, 2.0), 4.0},
+	        			 { new Esfera(2.0),50.26},
+	        			 
+	        			
+	        		
 	        		 });
 	     }
 }

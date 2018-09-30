@@ -9,5 +9,9 @@ public enum FiguraType {
 	HEXAGONO,
 	TRIANGULO,
 	LOSANGO,
-	CUBO;
+	CUBO,
+	ESFERA,
+	CILINDRO,
+	PRISMA,
+	PIRAMIDE;
 }

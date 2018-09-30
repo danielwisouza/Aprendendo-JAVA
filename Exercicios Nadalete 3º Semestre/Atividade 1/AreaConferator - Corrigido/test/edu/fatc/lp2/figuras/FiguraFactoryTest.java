@@ -12,8 +12,10 @@ import edu.fatec.lp2.FiguraType;
 import edu.fatec.lp2.factory.Factory;
 import edu.fatec.lp2.factory.FiguraFactory;
 import edu.fatec.lp2.figuras.Calculable;
+import edu.fatec.lp2.figuras.Cilindro;
 import edu.fatec.lp2.figuras.Circulo;
 import edu.fatec.lp2.figuras.Cubo;
+import edu.fatec.lp2.figuras.Esfera;
 import edu.fatec.lp2.figuras.Hexagono;
 import edu.fatec.lp2.figuras.Losango;
 import edu.fatec.lp2.figuras.Paralelograma;
@@ -54,6 +56,7 @@ public class FiguraFactoryTest {
 	        			 { FiguraType.RETANGULO, Retangulo.class, new double[]{4.0, 2.0}},
 	        			 { FiguraType.TRAPEZIO, Trapezio.class, new double[]{4.0, 2.0, 3.0}},
 	        			 { FiguraType.TRIANGULO, Triangulo.class, new double[]{4.0, 2.0}},
+
 	        		 });
 	     }
 }
