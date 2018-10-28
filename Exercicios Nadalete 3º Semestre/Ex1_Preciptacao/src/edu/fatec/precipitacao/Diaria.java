@@ -14,14 +14,14 @@ public class Diaria implements Comparable<Diaria>{
 		return totalChuva;
 	}
 
-	public void Dia(LocalDate dia, double totalChuva){
+	public Diaria(LocalDate dia, double totalChuva){
 		this.dia = dia;
 		this.totalChuva = totalChuva;
 	}
 	
-	@Override
-	public int compareTo(Diaria o) {
-		
-		return 0;
-	}
+	public int compareTo(Diaria d) {          
+	    return (this.getTotalChuva() < d.getTotalChuva() ? -1 : 
+	            (this.getTotalChuva() == d.getTotalChuva() ? 0 : 1));     
+	  }
+
 }
