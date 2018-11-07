@@ -2,11 +2,11 @@ package edu.fatec.sjc;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Escritor {
  
-  public static void main(String args[]) throws IOException) {
+  public static void main(String args[]) throws IOException{
 	  FileReader f = new FileReader("Endeço");
 	  BufferedReader in = new BufferedReader(f);
 	  String linha = in.readLine();
@@ -15,5 +15,6 @@ public class Escritor {
 		linha = in.readLine();
 	  }
 	  in.close();
+}
 }
 
