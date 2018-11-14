@@ -1,20 +1,26 @@
 package edu.fatec.sjc;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-//import java.util.Scanner;
+
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
 
 public class Escritor {
+	public static void main(String args[]) {
+		try {
+			FileOutputStream arquivo = new FileOutputStream("telefone.txt");
+			PrintWriter pr = new PrintWriter(arquivo);
+			
+			pr.println("Linha1 Coluna1 : Linha1 Coluna2 : Linha1 Coluna3");
+			pr.println("Linha2 Coluna1 : Linha2 Coluna2 : Linha2 Coluna3");
+			pr.println("Linha3 Coluna1 : Linha3 Coluna2 : Linha3 Coluna3");
+		
+			pr.close();
+			arquivo.close();
+		}
+		catch(Exception e) {
+			System.out.println("Erro ao Escrever o arquivo");
+		}
+	}
  
-  public static void main(String args[]) throws IOException{
-	  FileReader f = new FileReader("Endeço");
-	  BufferedReader in = new BufferedReader(f);
-	  String linha = in.readLine();
-	  while (linha != null){
-		System.out.println(linha);
-		linha = in.readLine();
-	  }
-	  in.close();
-}
+
 }
 
