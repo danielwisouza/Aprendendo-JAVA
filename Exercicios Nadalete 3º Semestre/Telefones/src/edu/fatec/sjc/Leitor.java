@@ -20,6 +20,7 @@ public class Leitor {
 					for (int i=0;i<palavra.length; i++) {
 						System.out.println(palavra[i]);
 					}
+					
 				 }
 			 }while (Linha != null);
 			 
@@ -28,4 +29,6 @@ public class Leitor {
 			 System.out.println("Erro ao ler arquivo");
 		 }
 	}
+
+	
 }
